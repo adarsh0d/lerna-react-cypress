@@ -6,5 +6,9 @@
   },
   "workspaces": {
     "packages": ["packages/**"]
+  },
+  "scripts": {
+    "start": "lerna exec --scope @demo/components -- yarn start",
+    "new-version": "lerna version --conventional-commits --yes"
   }
 }
